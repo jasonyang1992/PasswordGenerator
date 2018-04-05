@@ -50,9 +50,42 @@ function PassGenFunction() {
     "Dog",
     "Cat",
     "Xan",
-    "Jot"
-  ]
+    "Jot",
 
+    "Tam",
+    "Rex",
+    "Row",
+    "Max",
+    "Joy",
+    "Mov",
+    "Toy",
+    "Sed",
+    "Boy",
+    "Vet",
+
+    "Zed",
+    "Wat",
+    "kin",
+    "Kon",
+    "Lee",
+    "Pap",
+    "Hen",
+    "Fip",
+    "Bet",
+    "Jet",
+
+    "Ret",
+    "Beb",
+    "Jop",
+    "Job",
+    "Net",
+    "Ner",
+    "Kat",
+    "Mat",
+    "Jay",
+    "Atm"
+
+  ]
 
   var Symbols1 = [
     "!",
@@ -66,6 +99,9 @@ function PassGenFunction() {
     "(",
     ")"
   ]
+
+  var n = 70; // This is the number of words in the array
+
   if (x == 1){
     var Letresult = "";
     for (var i = 0; i < 1; i++)
@@ -79,23 +115,23 @@ function PassGenFunction() {
 
   }
   if (x == 3){
-  var Letresult = threeword[Math.floor(Math.random() * 40)]
+  var Letresult = threeword[Math.floor(Math.random() * n)]
 
   }
   if (x == 4){
     for (var i = 0; i < 1; i++)
     text += possible.charAt(Math.floor(Math.random() * possible.length));
-    var Letresult = text + threeword[Math.floor(Math.random() * 40)];
+    var Letresult = text + threeword[Math.floor(Math.random() * n)];
 
   }
   if (x == 5){
     for (var i = 0; i < 2; i++)
     text += possible.charAt(Math.floor(Math.random() * possible.length));
-    var Letresult = text + threeword[Math.floor(Math.random() * 40)];
+    var Letresult = text + threeword[Math.floor(Math.random() * n)];
 
   }
   if (x == 6){
-    var Letresult = threeword[Math.floor(Math.random() * 40)] + threeword[Math.floor(Math.random() * 40)];
+    var Letresult = threeword[Math.floor(Math.random() * n)] + threeword[Math.floor(Math.random() * n)];
 
   }
 
