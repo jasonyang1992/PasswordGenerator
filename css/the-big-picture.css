@@ -1,17 +1,114 @@
 /*!
  * Start Bootstrap - The Big Picture (https://startbootstrap.com/template-overviews/the-big-picture)
- * Copyright 2013-2017 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
  */
 
-body {
-  background: black url('../Images/Background.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+
+:root {
+  --select-padding-x: 1.5rem;
+  --select-padding-y: .75rem;
 }
 
-.whitetxt{
+
+
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.card-signin {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-signin .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.card-signin .card-body {
+  padding: 2rem;
+}
+
+.form-signin {
+  width: 100%;
+}
+
+.form-signin .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group select {
+  height: auto;
+  border-radius: 2rem;
+}
+
+.form-label-group>select,
+.form-label-group>label {
+  padding: var(--select-padding-y) var(--select-padding-x);
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group select::-webkit-select-placeholder {
+  color: transparent;
+}
+
+.form-label-group select:-ms-select-placeholder {
+  color: transparent;
+}
+
+.form-label-group select::-ms-select-placeholder {
+  color: transparent;
+}
+
+.form-label-group select::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group select::placeholder {
+  color: transparent;
+}
+
+.form-label-group select:not(:placeholder-shown) {
+  padding-top: calc(var(--select-padding-y) + var(--select-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--select-padding-y) / 3);
+}
+
+.form-label-group select:not(:placeholder-shown)~label {
+  padding-top: calc(var(--select-padding-y) / 3);
+  padding-bottom: calc(var(--select-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+.btn-Generate {
   color: white;
+  background-color: #ff8000;
 }
